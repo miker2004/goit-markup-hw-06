@@ -260,11 +260,11 @@ a {
 .main-txt {
     color: #ffffff;
     text-align: center;
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.07;
+    line-height: 40px;
     letter-spacing: 0.02em;
-    max-width: 496px;
+    max-width: 216px;
     margin: 0 auto;
     margin-bottom: 48px;
 }
@@ -285,7 +285,7 @@ ul {
     max-width: 1440px;
     height: 432px;
     margin: 0 auto;
-    padding: 188px 0;
+    padding: 128px 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -598,6 +598,7 @@ footer {
     height: 40px;
     border-radius: 4px;
     border: none;
+    fill: #ffffff;
 
     display: flex;
     justify-content: center;
