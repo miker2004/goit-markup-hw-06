@@ -1,11 +1,10 @@
 body {
-    width: 320px;
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #ffffff;
 }
 
-/* h1,
+h1,
 h2,
 h3, 
 h4, 
@@ -13,11 +12,14 @@ h5,
 h6, 
 p { 
 margin: 0;
- } */
+ }
 
-.container_forth {
-    width: 288px;
+ul {
+    list-style: none; 
+    padding-left: 0; 
+    margin: 0;
 }
+
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -36,10 +38,6 @@ margin: 0;
     font-weight: 700;
     line-height: 21px;
     letter-spacing: 3%;
-}
-
-a {
-    text-decoration: none;
 }
 
 .typical-paragraphs {
@@ -178,12 +176,6 @@ a {
     max-width: 216px;
     margin: 0 auto;
     margin-bottom: 48px;
-}
-
-ul {
-    list-style: none; 
-    padding-left: 0; 
-    margin: 0;
 }
 
 .bg-clr {
@@ -329,7 +321,6 @@ footer {
 
 .forth-section {
     padding: 120px 0 120px 0;
-    width: 288px;
 }
 
 .forth-head {
@@ -752,7 +743,20 @@ background-color: #404bbf;
 .container {
     max-width: 320px;
     margin: 0 auto;
-    padding: 0 15px 0 15px;
+    padding: 0 16px 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 15px 0 15px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
 }
                 /* ========================== Sekcja Druga ========================== */
 .second-section {
@@ -764,7 +768,7 @@ background-color: #404bbf;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.11;
+    line-height: 40px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
@@ -782,10 +786,10 @@ background-color: #404bbf;
     gap: 72px;
 }
 
-.second-txt_style {
+/* .second-txt_style {
     width: 288px;
     height: 120px;
-}
+} */
 
 .list-items {
     display: flex;
@@ -802,7 +806,7 @@ background-color: #404bbf;
     justify-content: center;
     height: 112px;
     border-radius: 4px;
-    margin-bottom: 8px;   
+    margin-bottom: 8px;
     position: absolute;
     width: 1px;
     height: 1px;
@@ -812,7 +816,7 @@ background-color: #404bbf;
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden;
+    overflow: hidden;   
 }
 
 .third-paragraphs {
@@ -882,7 +886,122 @@ background-color: #404bbf;
 }
 /* ================================================= TABLET 👇 ========================================= */
 @media screen and (min-width: 768px) {
+    .second-section {
+        padding-bottom: 0;
+    }
+
+    .list-items {
+        display: block;
+        margin-bottom: 74px;
+    }
+
+    .second-txt {
+        flex-wrap: wrap;
+        gap: 24px;
+        flex-direction: row;
+    }
+
+    .list-items {
+        width: 356px;
+    }
+                                    /* trzecia sekcja */
+
+    .third-section {
+        margin-top: 0;
+    }
+    
+    .third-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 3 * 24px) / 4);
+        border-radius: 0px 0px 4px 4px;
+        gap: 32px;
+    }
+
+                                    /* czwarta sekcja */
+
+    .forth-li_style {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        padding: 32px 16px;
+        gap: 32px;
+    }
+
+                                    /* foot*/
+            
+    .foot-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .foot-logo {
+        margin: 0 16px;
+    }
+
+    .web-foot {
+        justify-content: flex-start;
+    }
+
+    .social-p {
+        justify-content: flex-start;
+    }       
+    
+    .foot-sbcr {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .sbcr-p {
+        justify-content: flex-start;
+    }
+
+    .foot-form {
+        flex-direction: row;
+    }
 }
+
 /* ================================================= DESKTOP 👇 ========================================= */
 @media screen and (min-width: 1158px) {
+
+    .second-section {
+        padding: 120px 0 120px
+    }
+    
+    .second-txt {
+        flex-wrap: nowrap;
+        gap: 24px;
+        flex-direction: row;
+    }
+
+    .list-items {
+        gap: 8px;
+        align-items: center;
+    }
+    
+    .third-heading {
+        color: #2e2f42;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    .third-paragraphs {
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+
+    .icons-display {
+        background-color: #F4F4FD;
+        border: solid 1px #8E8F99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        border-radius: 4px;
+        margin-bottom: 8px;  
+    }
 }
