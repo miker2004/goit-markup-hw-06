@@ -879,6 +879,24 @@ background-color: #404bbf;
 }
 /* ================================================= TABLET 👇 ========================================= */
 @media screen and (min-width: 768px) {
+    .logo {
+        margin-right: 113px;
+        justify-content: flex-start;
+        display: flex;
+        line-height: 21px;
+    }
+
+    .contact-flex {
+        flex-direction: column;
+        gap: 8px;
+        
+    }
+
+    .nav-list-current {
+        padding: 24px 0 43px;
+    }
+    
+                                    /* druga sekcja */
     .second-section {
         padding-bottom: 0;
     }
@@ -958,6 +976,19 @@ background-color: #404bbf;
 
 /* ================================================= DESKTOP 👇 ========================================= */
 @media screen and (min-width: 1158px) {
+    .logo {
+        line-height: 1.17;
+        margin-right: 76px;
+    }
+
+    .nav-list-current {
+        padding: 24px 0 24px;
+    }
+
+    .contact-flex {
+        gap: 40px;
+        flex-direction: row;
+    }
 
     .second-section {
         padding: 120px 0 120px
