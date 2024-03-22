@@ -742,28 +742,9 @@ background-color: #404bbf;
     border-radius: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.container {
-    max-width: 320px;
-    margin: 0 auto;
-    padding: 0 16px 0 16px;
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding: 0 15px 0 15px;
-    }
-}
-
-@media screen and (min-width: 1158px) {
-    .container {
-        max-width: 1158px;
-    }
-}
                 /* ========================== Sekcja Druga ========================== */
 .second-section {
-    padding-bottom: 120px;
+    padding: 96px 16px 96px 16px;
 }
 
 .second-heading {
@@ -784,8 +765,6 @@ background-color: #404bbf;
 
 .second-txt {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 72px;
 }
 
@@ -796,20 +775,10 @@ background-color: #404bbf;
 
 .list-items {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
 }
 
 .icons-display {
-    background-color: #F4F4FD;
-    border: solid 1px #8E8F99;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    border-radius: 4px;
-    margin-bottom: 8px;
+    display: none;
 }
 
 .third-paragraphs {
@@ -824,16 +793,13 @@ background-color: #404bbf;
 }
 
 .third-section {
-    padding: 120px 0 120px;
-    margin-top: 170px;
+    padding: 96px 0;
 }
  
 .third-text {
     display: flex;
-    flex-direction: column;
     flex-basis: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
-    gap: 72px;
 }
 
 .img-bg {
@@ -869,18 +835,55 @@ background-color: #404bbf;
     height: 40px;
 }
 
-/* ================================================= MOBILE 👇 ========================================= */
-@media screen and (max-width: 767px) {
-
-
-                        /* ========================== Sekcja Czwarta ========================== */
-
-    
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 16px 0 16px;
 }
-/* ================================================= TABLET 👇 ========================================= */
+
 @media screen and (min-width: 768px) {
+.container {
+    max-width: 768px;
+    padding: 0 15px 0 15px;
+}
+}
+
+@media screen and (min-width: 1158px) {
+.container {
+    max-width: 1158px;
+}
+}
+
+/* ================================================= MOBILE 👇 ========================================= */
+@media only screen and (max-width: 767px) {
+
+    .second-txt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-items {
+        gap: 8px;
+        max-width: 288px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .third-heading_style {
+        text-align: center;
+    }
+
+    .third-text {
+        flex-direction: column;
+        gap: 72px;
+    }  
+}
+
+/* ================================================= TABLET 👇 ========================================= */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
     .logo {
-        margin-right: 113px;
+        margin-right: 120px;
+        margin-left: 16px;
         justify-content: flex-start;
         display: flex;
         line-height: 21px;
@@ -888,18 +891,18 @@ background-color: #404bbf;
 
     .contact-flex {
         flex-direction: column;
-        gap: 8px;
+        gap: 12px;
         
     }
 
     .nav-list-current {
         padding: 24px 0 43px;
     }
-    
-                                    /* druga sekcja */
-    .second-section {
-        padding-bottom: 0;
+
+    .contacts-style {
+        margin-left: 122px;
     }
+                                    /* druga sekcja */
 
     .list-items {
         display: block;
@@ -908,7 +911,8 @@ background-color: #404bbf;
 
     .second-txt {
         flex-wrap: wrap;
-        gap: 24px;
+        row-gap: 72px;
+        column-gap: 24px;
         flex-direction: row;
     }
 
@@ -916,10 +920,6 @@ background-color: #404bbf;
         width: 356px;
     }
                                     /* trzecia sekcja */
-
-    .third-section {
-        margin-top: 0;
-    }
     
     .third-text {
         display: flex;
@@ -932,24 +932,38 @@ background-color: #404bbf;
 
                                     /* czwarta sekcja */
 
+    .forth-section {
+        padding: 96px 16px 96px 16px;
+    }
+
     .forth-li_style {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
         padding: 32px 16px;
-        gap: 32px;
+        column-gap: 24px;
+        row-gap: 72px;
     }
 
                                     /* foot*/
-            
+     footer {
+        padding: 108px 0 108px;
+    }
+
     .foot-section {
         flex-direction: row;
         flex-wrap: wrap;
+        padding: 96px 0 96px 108px;
     }
 
     .foot-logo {
-        margin: 0 16px;
+        margin: 0 0 72px 0;
+    }
+
+    .foot-media {
+        margin-bottom: 104px;
+        margin-left: 24px;
     }
 
     .web-foot {
@@ -1001,9 +1015,7 @@ background-color: #404bbf;
     }
 
     .list-items {
-        display: flex;
-        gap: 8px;
-        align-items: center;
+        display: block;
     }
     
     .third-heading {
@@ -1025,9 +1037,8 @@ background-color: #404bbf;
         align-items: center;
         justify-content: center;
         height: 112px;
-        width: 264px;
         border-radius: 4px;
-        margin-bottom: 8px;  
+        margin-bottom: 8px;
     }
 
     .third-text {
