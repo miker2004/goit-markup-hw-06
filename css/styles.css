@@ -187,7 +187,6 @@ a {
 }
 
 .bg-clr_first {
-    background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/office.jpg");
     max-width: 1440px;
     height: 432px;
     margin: 0 auto;
@@ -379,7 +378,6 @@ footer {
 
 .social-p {
     display: flex;
-    justify-content: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -445,9 +443,6 @@ footer {
 
 .foot-form {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 24px;
 }
 
@@ -808,6 +803,7 @@ background-color: #404bbf;
 
 .third-li {
     border-radius:  0px 0px 4px 4px;
+    width: 264px;
     box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -857,6 +853,50 @@ background-color: #404bbf;
 /* ================================================= MOBILE 👇 ========================================= */
 @media only screen and (max-width: 767px) {
 
+    .mobile-div {
+        height: 56px;
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-icons {
+        fill: #2F2F37;
+    }
+
+    .mobile-logo {
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        color: #4d5ae5;
+        line-height: 21px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-right: 220px;
+        margin-left: 16px;
+    }
+    
+    .mobile-logo-part-2 {
+        color: #2E2F42;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 3%;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .bg-clr_first {
+        background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/mobileofficex2.jpg");
+        padding: 72px 0;
+    }
+
+    .main-txt {
+        margin-bottom: 72px;
+    }
+
     .second-txt {
         flex-direction: column;
         align-items: center;
@@ -877,6 +917,31 @@ background-color: #404bbf;
         flex-direction: column;
         gap: 72px;
     }  
+
+    .logo {
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+        justify-content: center;
+    }
+
+    .social-p {
+        justify-content: center;
+    }
+
+    .foot-form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        padding: 96px 0;
+    }
+
+    .foot-sbcr {
+        display: block;
+    }
 }
 
 /* ================================================= TABLET 👇 ========================================= */
@@ -901,6 +966,18 @@ background-color: #404bbf;
 
     .contacts-style {
         margin-left: 122px;
+    }
+
+    .bg-clr_first {
+        background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/tabletoffixex2.jpg");
+        padding: 112px 0;
+    }
+
+    .main-txt {
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 60px;
+        margin-bottom: 36px;
     }
                                     /* druga sekcja */
 
@@ -948,7 +1025,7 @@ background-color: #404bbf;
 
                                     /* foot*/
      footer {
-        padding: 108px 0 108px;
+        padding: 96px 0;
     }
 
     .foot-section {
@@ -990,6 +1067,16 @@ background-color: #404bbf;
 
 /* ================================================= DESKTOP 👇 ========================================= */
 @media screen and (min-width: 1158px) {
+
+    .bg-clr_first {
+        background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/pcofficex2.jpg");
+    }
+
+    .main-txt {
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 60px;
+    }
     .logo {
         line-height: 1.17;
         margin-right: 76px;
@@ -1062,5 +1149,14 @@ background-color: #404bbf;
 
     .foot-sbcr {
         margin-left: auto;
+    }
+
+    .foot-section {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .web-foot {
+        justify-content: flex-start;
     }
 }
