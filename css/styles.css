@@ -918,6 +918,10 @@ background-color: #404bbf;
         gap: 72px;
     }  
 
+    .portfolio-pictures {
+        width: 288px;
+    }
+
     .logo {
         margin-left: 0;
         margin-right: 0;
@@ -946,6 +950,11 @@ background-color: #404bbf;
 
 /* ================================================= TABLET 👇 ========================================= */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
+
+    .mobile-div {
+        display: none;
+    }
+
     .logo {
         margin-right: 120px;
         margin-left: 16px;
@@ -1006,6 +1015,11 @@ background-color: #404bbf;
         flex-basis: calc((100% - 3 * 24px) / 4);
         gap: 32px;
     }
+
+    .portfolio-pictures {
+        width: 356px;
+    }
+
 
                                     /* czwarta sekcja */
 
@@ -1068,6 +1082,10 @@ background-color: #404bbf;
 /* ================================================= DESKTOP 👇 ========================================= */
 @media screen and (min-width: 1158px) {
 
+    .mobile-div {
+        display: none;
+    }
+
     .bg-clr_first {
         background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/pcofficex2.jpg");
     }
@@ -1116,6 +1134,15 @@ background-color: #404bbf;
         font-weight: 400;
         margin-bottom: 8px;
     }
+
+    .forth-li_style {
+        flex-direction: row;
+    }
+
+    .distance {
+        width: 360px;
+    }
+
 
     .icons-display {
         background-color: #F4F4FD;
