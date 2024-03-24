@@ -849,6 +849,72 @@ background-color: #404bbf;
 /* ================================================= MOBILE 👇 ========================================= */
 @media only screen and (max-width: 767px) {
 
+    .menu-mobile-isopen {
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .menu-mobile {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        padding: 72px 16px 40px 16px;
+    }
+
+    .mobile-a {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+        display: block;
+        margin-bottom: 40px;
+        font-family: Roboto, serif;
+    }
+
+    .mobile-a:active,
+    .mobile-a:hover {
+        color: #404BBF;
+    }
+
+    .mobile-links {
+        margin-bottom: 168px;
+    }
+
+    .mobile-contacts_li {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        margin-bottom: 48px;
+    }
+
+    .mobile-contacts {
+        font-family: Roboto, serif;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+        color: #434455;
+        font-style: normal;
+    }
+    
+    .mobile-contacts:active,
+    .mobile-contacts:hover {
+        color: #4D5AE5;
+    }
+
+    .mobile-media {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
     .mobile-div {
         height: 56px;
         display: flex;
@@ -953,6 +1019,10 @@ background-color: #404bbf;
 
 /* ================================================= TABLET 👇 ========================================= */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
+
+    .menu-mobile {
+        display: none;
+    }
 
     .mobile-div {
         display: none;
@@ -1090,6 +1160,10 @@ background-color: #404bbf;
 
 /* ================================================= DESKTOP 👇 ========================================= */
 @media screen and (min-width: 1158px) {
+
+    .menu-mobile {
+        display: none;
+    }
 
     .mobile-div {
         display: none;
