@@ -427,7 +427,7 @@ footer {
 
 .foot-sbcr {
     margin-top: 72px;
-    margin-left: auto;
+    margin-left: 0;
 }
 
 .sbcr-p {
@@ -524,8 +524,8 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    visibility: visible;
-    opacity: 1;
+    visibility: hidden;
+    opacity: 0;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -750,7 +750,6 @@ background-color: #404bbf;
 }
 
 .third-heading_style {
-    text-align: center;
     margin-bottom: 8px;
 }
 
@@ -763,10 +762,6 @@ background-color: #404bbf;
     width: 288px;
     height: 120px;
 } */
-
-.list-items {
-    display: flex;
-}
 
 .icons-display {
     display: none;
@@ -858,13 +853,15 @@ background-color: #404bbf;
         height: 100%;
         visibility: visible;
         opacity: 1;
+        padding: 72px 16px 40px 16px;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .menu-mobile {
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        padding: 72px 16px 40px 16px;
+    .menu-button {
+        background-color: transparent;
     }
 
     .mobile-a {
@@ -877,6 +874,10 @@ background-color: #404bbf;
         margin-bottom: 40px;
         font-family: Roboto, serif;
     }
+    
+    .mobile-a-first {
+        color: #404BBF;
+    }
 
     .mobile-a:active,
     .mobile-a:hover {
@@ -884,7 +885,7 @@ background-color: #404bbf;
     }
 
     .mobile-links {
-        margin-bottom: 168px;
+        margin-bottom: auto;
     }
 
     .mobile-contacts_li {
@@ -953,10 +954,15 @@ background-color: #404bbf;
     .bg-clr_first {
         background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/mobileofficex2.jpg");
         padding: 72px 0;
+        max-width: 320px;
     }
 
     .main-txt {
         margin-bottom: 72px;
+    }
+
+    .second-section {
+        padding: 96px 0;
     }
 
     .second-txt {
@@ -965,10 +971,7 @@ background-color: #404bbf;
     }
 
     .list-items {
-        gap: 8px;
         max-width: 288px;
-        flex-direction: column;
-        align-items: center;
     }
 
     .third-heading_style {
@@ -976,9 +979,14 @@ background-color: #404bbf;
     }
 
     .third-text {
+        align-items: center;
         flex-direction: column;
         gap: 72px;
     }  
+
+    .forth-section {
+        padding: 120px 0 96px;
+    }
 
     .portfolio-pictures {
         width: 288px;
@@ -1005,9 +1013,6 @@ background-color: #404bbf;
         padding: 96px 0;
     }
 
-    .foot-sbcr {
-        display: block;
-    }
 
     .modal {
         width: 288px;
@@ -1020,7 +1025,7 @@ background-color: #404bbf;
 /* ================================================= TABLET 👇 ========================================= */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
 
-    .menu-mobile {
+    .menu-mobile-isopen {
         display: none;
     }
 
@@ -1161,7 +1166,7 @@ background-color: #404bbf;
 /* ================================================= DESKTOP 👇 ========================================= */
 @media screen and (min-width: 1158px) {
 
-    .menu-mobile {
+    .menu-mobile-isopen {
         display: none;
     }
 
