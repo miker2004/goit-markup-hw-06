@@ -845,7 +845,6 @@ background-color: #404bbf;
 @media only screen and (max-width: 767px) {
 
     .menu-mobile-isopen {
-        max-width: 320px;
         margin: 0 auto;
         background-color: #ffffff;
         position: fixed;
@@ -937,7 +936,7 @@ background-color: #404bbf;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         font-weight: 700;
-        margin-right: 220px;
+        margin-right: auto;
         margin-left: 16px;
     }
     
@@ -977,7 +976,7 @@ background-color: #404bbf;
         max-width: 288px;
     }
 
-    .third-heading_style {
+    .third-headings_style {
         text-align: center;
     }
 
